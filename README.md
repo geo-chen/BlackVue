@@ -15,7 +15,7 @@ and the mis-config is updated:
 ![image](https://github.com/user-attachments/assets/ab3bb1bc-3a70-4c39-b34b-264ece664eb5)
 
 
-## Finding 2: Hardcoded secrets exposed in plaintext
+## Finding 2: Hardcoded secrets exposed in plaintext + client secrets sent via GET
 
 In the BlackVue v3.65 APK, both BCS_TOKEN and SECRET_KEY, along with the API endpoints, are exposed in the clear.
 ![image](https://github.com/user-attachments/assets/e2f09ff7-884f-42c7-9667-566ab8e7760e)
