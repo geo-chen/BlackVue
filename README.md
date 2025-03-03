@@ -1,6 +1,6 @@
 # BlackVue
 
-## Finding 1: Authenticated Modifications to Dashcam Configurations
+## Finding 1: Unauthenticated Modifications to Dashcam Configurations
 
 Following CVE-2023-27746 (weak credentials) and CVE-2023-27747 (unauthenticated web server), an attacker can perform more damage by draining and sabotaging the battery of the car.
 
