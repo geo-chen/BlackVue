@@ -43,7 +43,16 @@ Why is this insecure? Because GET parameters are captured in browser history, re
 ## Disclosure Timeline
 
 25 Feb 2025 - disclosed to BlackVue
+
 26 Feb 2025 - acknowledged by BlackVue
+
 5 Mar 2025 - accepted by BlackVue
+
 16 Mar 2025 - CVEs published
+
+
+
+
+
+
 
