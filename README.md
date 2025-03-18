@@ -34,7 +34,7 @@ the bcsSignature is easily computed:
 ![image](https://github.com/user-attachments/assets/27594907-cfed-4718-90e6-b2e6b860b9bf)
 
 
-## Finding 3 - CVE-2025-2356: Unauthorised API calls to change settings such as delete device:
+## Finding 4 - CVE-2025-2356: Unauthorised API calls to change settings such as delete device:
 
 While most of the sensitive API endpoints require userToken, that is transmitted via GET parameter:
 ![image](https://github.com/user-attachments/assets/ea75d84d-e5eb-43bb-9c8b-b78111a3a67b)
@@ -46,7 +46,7 @@ Redacted image of a malicious call:
 
 Why is this insecure? Because GET parameters are captured in browser history, referral URLs, or any proxy solutions. For instance, in a corporate environment, all endpoint URLs are captured, so if an employee uses the blackvue app, the usertoken, which is sensitive, would be logged by the proxy solution. With the user email + token and the hardcoded secrets, an attacker can make arbitrary changes or remotely control the account/device.
 
-## Finding 4: Misconfigured Cloud Devices Exposing Live Feeds, Location, Even Car Plates
+## Finding 5: Misconfigured Cloud Devices Exposing Live Feeds, Location, Even Car Plates
 <in discussion>
 
 
