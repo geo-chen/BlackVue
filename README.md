@@ -1,12 +1,12 @@
 # BlackVue
 
 
-## Finding 1: Unauthenticated Upload Endpoint on HTTP 
+## Finding 1 - CVE-2025-30130: Unauthenticated Upload Endpoint on HTTP 
 Following CVE-2023-27746 (weak credentials) and CVE-2023-27747 (unauthenticated web server), an attacker can uplod malicious code or even malware via the following endpoint:
 
 ![image](https://github.com/user-attachments/assets/a0111910-f0d8-4774-beb5-1c52767b836f)
 
-## Finding 2: Unauthenticated Modifications to Dashcam Configurations
+## Finding 2 - CVE-2025-30128: Unauthenticated Modifications to Dashcam Configurations
 
 An attacker connected to the dashcam's network can perform more damage by draining and sabotaging the battery of the car.
 
