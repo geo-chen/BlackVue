@@ -1,14 +1,34 @@
 # BlackVue
 
-### Product: Dashcam
+**Product**: Dashcam
 
-### Version: 590X
+**Version**: 590X
 
 
 ## Finding 1 - CVE-2025-30130: Unauthenticated Upload Endpoint on HTTP 
-Following CVE-2023-27746 (weak credentials) and CVE-2023-27747 (unauthenticated web server), an attacker can upload malicious code or even malware via the following endpoint:
+
+**Description**: Following CVE-2023-27746 (weak credentials) and CVE-2023-27747 (unauthenticated web server), an attacker can upload malicious code or even malware via the following endpoint: http://10.99.77.1/upload.cgi
 
 ![image](https://github.com/user-attachments/assets/a0111910-f0d8-4774-beb5-1c52767b836f)
+
+**Vulnerability Type**: Incorrect Access Control
+
+**Vendor of Product**: BlackVue
+
+**Affected Product Code Base**: BlackVue Dashcam 590X
+
+**Affected Component**: Upload mechanism
+
+**Attack Type**: Remote
+
+**Impact Code execution**: True
+
+**Impact Information Disclosure**: True
+
+**Attack Vectors**: True
+
+**Has vendor confirmed or acknowledged the vulnerability?**: Yes
+
 
 ## Finding 2 - CVE-2025-30128: Unauthenticated Modifications to Dashcam Configurations
 
