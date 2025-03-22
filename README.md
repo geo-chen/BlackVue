@@ -25,26 +25,40 @@
 
 **Impact Information Disclosure**: True
 
-**Attack Vectors**: True
+**Attack Vectors**: A remote attacker can upload malware onto the dashcam via an unauthenticated upload endpoint on the dashcam's http server.
 
 **Has vendor confirmed or acknowledged the vulnerability?**: Yes
 
 
 ## Finding 2 - CVE-2025-30128: Unauthenticated Modifications to Dashcam Configurations
 
-An attacker connected to the dashcam's network can perform more damage by draining and sabotaging the battery of the car.
+**Description**: An attacker connected to the dashcam's network can perform more damage by draining and sabotaging the battery of the car.
 
 Here's an example - this is an as-is config accessible over unauthenticated web server:
 
 ![image](https://github.com/user-attachments/assets/d51ec69b-9acd-4cb1-91ca-2bcadf9933b6)
 
-Using the same upload endpoint:
-![image](https://github.com/user-attachments/assets/a0111910-f0d8-4774-beb5-1c52767b836f)
-
-and the mis-config is updated:
+Using the upload endpoint at http://10.99.77.1/upload.cgi, an attacker can add in misconfiguration to sabotage the car battery remotely:
 
 ![image](https://github.com/user-attachments/assets/ab3bb1bc-3a70-4c39-b34b-264ece664eb5)
 
+**Vulnerability Type**: Incorrect Access Control
+
+**Vendor of Product**: BlackVue
+
+**Affected Product Code Base**: BlackVue Dashcam 590X
+
+**Affected Component**: Unauthenticated Configuration Management
+
+**Attack Type**: Remote
+
+**Impact Code execution**: True
+
+**Impact Information Disclosure**: True
+
+**Attack Vectors**: A remote attacker can leverage on the lack of authentication on configuration management to disable battery protection on the dashcam to drain the car's battery.
+
+**Has vendor confirmed or acknowledged the vulnerability?**: Yes
 
 ## Finding 3 - CVE-2025-2355: Hardcoded secrets exposed in plaintext + client secrets sent via GET
 
