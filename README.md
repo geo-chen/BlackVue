@@ -5,9 +5,9 @@
 **Version**: 590X
 
 
-## Finding 1 - CVE-2025-30130: Unauthenticated Upload Endpoint on HTTP 
+## Finding 1: Unauthenticated Upload Endpoint on HTTP 
 
-**Description**: Following CVE-2023-27746 (weak credentials) and CVE-2023-27747 (unauthenticated web server), an attacker can upload malicious code or even malware via the following endpoint: http://10.99.77.1/upload.cgi
+**Description**: An attacker can upload malicious code or even malware via the following endpoint that's open without any authentication once within network: http://10.99.77.1/upload.cgi
 
 ![image](https://github.com/user-attachments/assets/a0111910-f0d8-4774-beb5-1c52767b836f)
 
@@ -30,7 +30,7 @@
 **Has vendor confirmed or acknowledged the vulnerability?**: Yes
 
 
-## Finding 2 - CVE-2025-30128: Unauthenticated Modifications to Dashcam Configurations
+## Finding 2: Unauthenticated Modifications to Dashcam Configurations
 
 **Description**: An attacker connected to the dashcam's network can perform more damage by draining and sabotaging the battery of the car.
 
